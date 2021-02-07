@@ -11,5 +11,15 @@ module.exports = {
       watch: true,
       max_memory_restart: "1G",
     },
+    {
+      name: "front",
+      cwd: "front",
+      script: "yarn",
+      args: "start",
+      instance: 1,
+      autorestart: true,
+      watch: false,
+      max_memory_restart: "1G",
+    },
   ],
 };
